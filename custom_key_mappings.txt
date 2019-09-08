@@ -1,0 +1,86 @@
+# Use Emacs-style bindings only.
+unmapAll
+
+#
+# rules.
+#
+# 1. when operation in the same page, use 'c-c'.
+# 2. when operation effects to others page, use 'c-x'.
+#
+# 1. when often operation, use 'c-'.
+# 2. when rare operation, use 'c-g'.
+
+# scroll
+map n scrollDown
+map p scrollUp
+map b scrollLeft
+map f scrollRight
+map <c-n> scrollDown
+map <c-p> scrollUp
+map <c-b> scrollLeft
+map <c-f> scrollRight
+map <c-,> scrollToTop
+map <c-.> scrollToBottom
+map <c-v> scrollFullPageDown
+#
+# <a-.> doesn't work.
+#
+#map ¯ scrollToTop # map <a-<> scrollToTop
+#map ˘ scrollToBottom # map <a->> scrollToBottom
+#map √ scrollFullPageUp # map <a-v> scrollFullPageUp
+
+# Edit
+map <c-r> reload
+map <c-g><c-u> copyCurrentUrl
+map <c-g><c-l> LinkHints.activateModeToCopyLinkUrl
+map <c-g><c-o> openCopiedUrlInCurrentTab
+map <c-g><c-O> openCopiedUrlInNewTab
+map <c-g><c-i> enterInsertMode
+map <c-g><c-f> focusInput
+
+# LinkHints
+map <c-c><c-f> LinkHints.activateMode
+map <c-c><c-F> LinkHints.activateModeToOpenInNewForegroundTab
+#
+# <a-.> doesn't work.
+#
+#map <c-c><a-f> LinkHints.activateModeWithQueue
+#map <c-c><a-F> LinkHints.activateModeToOpenInNewTab
+
+# Vomnibar(search bar)
+map <c-g><c-D> Vomnibar.activate
+map <c-g><c-d> Vomnibar.activateInNewTab
+map <c-g>b Vomnibar.activateTabSelection
+map <c-g><c-b> Vomnibar.activateBookmarksInNewTab
+map <c-g><c-B> Vomnibar.activateBookmarks
+
+# Find
+map </> enterFindMode
+map <c-s> enterFindMode
+map s performFind
+map r performBackwardsFind
+
+# History
+#map <c-g>B goPrevious
+#map <c-g>F goNext
+map <c-x>b goBack
+map <c-x>f goForward
+
+# Tab
+map <c-x><c-b> previousTab
+map <c-x><c-f> nextTab
+#
+# <a-> doesn't work.
+#
+#map Ï nextTab # map <a-F> nextTab
+#map ı previousTab # map <a-B> previousTab
+#
+map <c-x><c-,> firstTab
+map <c-x><c-.> lastTab
+map <c-t> createTab
+map <c-x><c-t> createTab
+map <c-x><c-v> removeTab
+map <c-x><c-r> restoreTab
+
+# Help
+map <c-h> showHelp
