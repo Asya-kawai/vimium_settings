@@ -80,6 +80,7 @@ map <c-x><c-.> lastTab
 map <c-t> createTab
 map <c-x><c-t> createTab
 map <c-x><c-v> removeTab
+map <c-w> removeTab
 map <c-x><c-r> restoreTab
 
 # Help
