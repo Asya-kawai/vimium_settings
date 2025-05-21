@@ -1,0 +1,27 @@
+{
+  "filterLinkHints": true,
+  "keyMappings": "# Use Emacs-style bindings only.\nunmapAll\n\n#\n# rules.\n#\n# 1. when operation in the same page, use 'c-c'.\n# 2. when operation effects to others page, use 'c-x'.\n#\n# 1. when often operation, use 'c-'.\n# 2. when rare operation, use 'c-g'.\n\n# scroll\nmap n scrollDown\nmap p scrollUp\nmap b scrollLeft\nmap f scrollRight\nmap <c-n> scrollDown\nmap <c-p> scrollUp\nmap <c-b> scrollLeft\nmap <c-f> scrollRight\nmap <c-,> scrollToTop\nmap <c-.> scrollToBottom\nmap <c-v> scrollFullPageDown\n#\n# <a-.> doesn't work.\n#\n#map ¯ scrollToTop # map <a-<> scrollToTop\n#map ˘ scrollToBottom # map <a->> scrollToBottom\n#map √ scrollFullPageUp # map <a-v> scrollFullPageUp\n\n# Edit\nmap <c-r> reload\nmap <c-g><c-u> copyCurrentUrl\nmap <c-g><c-l> LinkHints.activateModeToCopyLinkUrl\nmap <c-g><c-o> openCopiedUrlInCurrentTab\nmap <c-g><c-O> openCopiedUrlInNewTab\nmap <c-g><c-i> enterInsertMode\nmap <c-g><c-f> focusInput\n\n# LinkHints\nmap <c-c><c-f> LinkHints.activateMode\nmap <c-c><c-F> LinkHints.activateModeToOpenInNewForegroundTab\n#\n# <a-.> doesn't work.\n#\n#map <c-c><a-f> LinkHints.activateModeWithQueue\n#map <c-c><a-F> LinkHints.activateModeToOpenInNewTab\n\n# Vomnibar(search bar)\nmap <c-g><c-D> Vomnibar.activate\nmap <c-g><c-d> Vomnibar.activateInNewTab\nmap <c-g>b Vomnibar.activateTabSelection\nmap <c-g><c-b> Vomnibar.activateBookmarksInNewTab\nmap <c-g><c-B> Vomnibar.activateBookmarks\n\n# Find\nmap </> enterFindMode\nmap <c-s> enterFindMode\nmap s performFind\nmap r performBackwardsFind\n\n# History\n#map <c-g>B goPrevious\n#map <c-g>F goNext\nmap <c-x>b goBack\nmap <c-x>f goForward\n\n# Tab\nmap <c-x><c-b> previousTab\nmap <c-x><c-f> nextTab\n#\n# <a-> doesn't work.\n#\n#map Ï nextTab # map <a-F> nextTab\n#map ı previousTab # map <a-B> previousTab\n#\nmap <c-x><c-,> firstTab\nmap <c-x><c-.> lastTab\nmap <c-t> createTab\nmap <c-x><c-t> createTab\nmap <c-x><c-v> removeTab\nmap <c-w> removeTab\nmap <c-x><c-r> restoreTab\n\n# Help\nmap <c-h> showHelp",
+  "settingsVersion": "2.2.1",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https://vncgw4.vps.sakura.ad.jp/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https://vncgw3.vps.sakura.ad.jp/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://vncgw3.vps.sakura.ad.jp/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://secure.sakura.ad.jp/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://*.vps.sakura.ad.jp/*"
+    }
+  ]
+}
